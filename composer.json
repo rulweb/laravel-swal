@@ -1,0 +1,41 @@
+{
+    "name": "rulweb/laravel-swal",
+    "description": "Реализация SweetAlert 2 для Laravel 5.5.x",
+    "license": "MIT",
+    "keywords": ["laravel", "swal", "sweetalert", "rulweb"],
+    "authors": [
+        {
+            "name": "RuleZzz",
+            "email": "rul22rus@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/contracts": "5.5.*",
+        "illuminate/session": "5.5.*",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "RulWeb\\Swal\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "RulWeb\\Swal\\ServiceProvider"
+            ],
+            "aliases": {
+                "Swal": "RulWeb\\Swal\\Facades\\Swal"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
